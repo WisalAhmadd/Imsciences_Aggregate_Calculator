@@ -9,32 +9,29 @@
 <body>
     <div class="main-container">
         <div class="about-me">
-    <h2>About Me</h2>
-<!--     <p>
-        Created and Developed by Wisal Ahmad. 
-    </p> -->
-   <p>
-    We also have a group where seniors are there to assist you with:<br>
-    ~ Online Admission Process<br>
-    ~ Entry Test Preparation<br>
-    ~ Interview Guidance<br>
-    ~ Merit Lists & Updates<br>
-    ~ Scholarships<br>
-      & Other Related Queries<br>
-    📂 Helpful Resources Past Papers, Study Material are also available
-</p>
-    <p>
-        Contact me at: 
-        <a href="mailto:iwisalkhattak@gmail.com">iwisalkhattak@gmail.com</a>
-    </p>
-    <p>
-        Follow me on 
-        <a href="https://www.linkedin.com/in/wisalxahmad/" target="_blank">LinkedIn</a>.
-    </p>
-    <p>
-        <a href="https://chat.whatsapp.com/HjFuDthvGAl63pQtV2pnB9" target="_blank">Join our WhatsApp group</a>
-    </p>
-</div>
+            <h2>About Me</h2>
+            <p>
+                We also have a group where seniors are there to assist you with:<br>
+                ~ Online Admission Process<br>
+                ~ Entry Test Preparation<br>
+                ~ Interview Guidance<br>
+                ~ Merit Lists & Updates<br>
+                ~ Scholarships<br>
+                & Other Related Queries<br>
+                📂 Helpful Resources Past Papers, Study Material are also available
+            </p>
+            <p>
+                Contact me at: 
+                <a href="mailto:iwisalkhattak@gmail.com">iwisalkhattak@gmail.com</a>
+            </p>
+            <p>
+                Follow me on 
+                <a href="https://www.linkedin.com/in/wisalxahmad/" target="_blank">LinkedIn</a>.
+            </p>
+            <p>
+                <a href="https://chat.whatsapp.com/HjFuDthvGAl63pQtV2pnB9" target="_blank">Join our WhatsApp group</a>
+            </p>
+        </div>
 
         <div class="container">
             <h1>Aggregate Calculator</h1>
@@ -49,12 +46,13 @@
                 </div>
                 <div>
                     <label for="fsc-marks">FSc Marks (out of 600):</label>
-                    <input type="number" id="fsc-marks" name="fsc-marks" required min="0" max="1200">
+                    <input type="number" id="fsc-marks" name="fsc-marks" required min="0" max="600">
                 </div>
                 <button type="button" onclick="calculateAggregate()">Calculate Aggregate</button>
             </form>
             <div id="result">
-                <p id="aggregate">Your aggregate is: </p>
+                <p id="aggregate"></p>
+                <!-- Messages will appear here automatically -->
             </div>
         </div>
     </div>
