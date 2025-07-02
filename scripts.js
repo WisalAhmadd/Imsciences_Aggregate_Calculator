@@ -23,14 +23,14 @@ function calculateAggregate() {
 
     // Display result
     const resultElement = document.getElementById('aggregate');
-    resultElement.innerHTML = `Your aggregate is: ${aggregate.toFixed(2)}%`;
+    resultElement.innerHTML = `Your aggregate is: <strong>${aggregate.toFixed(2)}%</strong>`;
     
-    // Add congratulatory messages based on aggregate score
+    // Add congratulatory messages
     if (aggregate > 78) {
-        resultElement.innerHTML += `<br><span style="color: green;"You have high chances for selection buddy.</span>`;
+        resultElement.innerHTML += `<br><span class="congrats">Congratulations! You have high chances for selection.</span>`;
         
         if (aggregate >= 80) {
-            resultElement.innerHTML += `<br><span style="color: blue; font-weight: bold;">Mubarak! Admin ka Treet to banta hy!</span>`;
+            resultElement.innerHTML += `<br><span class="treat-message">Admin ka Treet to banta hy!</span>`;
         }
     }
 }
