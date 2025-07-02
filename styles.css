@@ -84,6 +84,27 @@ input[type="number"] {
     box-sizing: border-box;
 }
 
+.congrats {
+    color: #28a745; /* Green color */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.treat-message {
+    color: #007bff; /* Blue color */
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid #6c757d;
+}
+
 button {
     padding: 10px;
     background: #007bff;
@@ -97,11 +118,12 @@ button:hover {
     background: #0056b3;
 }
 
-#result {
+/* old */
+/* #result {
     margin-top: 20px;
     font-size: 18px;
     color: #333;
-}
+} */
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
