@@ -22,5 +22,15 @@ function calculateAggregate() {
     const aggregate = testWeighted + interviewWeighted + fscWeighted;
 
     // Display result
-    document.getElementById('aggregate').innerText = `Your aggregate is: ${aggregate.toFixed(2)}%`;
+    const resultElement = document.getElementById('aggregate');
+    resultElement.innerHTML = `Your aggregate is: ${aggregate.toFixed(2)}%`;
+    
+    // Add congratulatory messages based on aggregate score
+    if (aggregate > 78) {
+        resultElement.innerHTML += `<br><span style="color: green;"You have high chances for selection buddy.</span>`;
+        
+        if (aggregate >= 80) {
+            resultElement.innerHTML += `<br><span style="color: blue; font-weight: bold;">Mubarak! Admin ka Treet to banta hy!</span>`;
+        }
+    }
 }
