@@ -84,6 +84,7 @@ input[type="number"] {
     box-sizing: border-box;
 }
 
+/* new start */
 .congrats {
     color: #28a745; /* Green color */
     font-weight: bold;
@@ -104,6 +105,13 @@ input[type="number"] {
     border-radius: 5px;
     border-left: 4px solid #6c757d;
 }
+
+#aggregate {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* new end */
 
 button {
     padding: 10px;
