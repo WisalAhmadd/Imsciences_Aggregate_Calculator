@@ -27,10 +27,11 @@ function calculateAggregate() {
     
     // Add congratulatory messages
     if (aggregate > 78) {
-        resultElement.innerHTML += `<br><span class="congrats">Congratulations! You have high chances for selection.</span>`;
+        resultElement.innerHTML += `<br><span class="congrats">You have high chances for selection.</span>`;
         
-        if (aggregate >= 80) {
-            resultElement.innerHTML += `<br><span class="treat-message">Admin ka Treet to banta hy!</span>`;
+    if else (aggregate >= 80) {
+            resultElement.innerHTML += `<br><span class="treat-message">Congratulation Admin ka Treet to banta hy!</span>`;
+   
         }
     }
 }
