@@ -24,14 +24,11 @@ function calculateAggregate() {
     // Display result
     const resultElement = document.getElementById('aggregate');
     resultElement.innerHTML = `Your aggregate is: <strong>${aggregate.toFixed(2)}%</strong>`;
-    
-    // Add congratulatory messages
-    if (aggregate > 78) {
+
+    // Add message based on aggregate
+    if (aggregate >= 80) {
+        resultElement.innerHTML += `<br><span class="treat-message">Congratulation Admin ka Treet to banta hy !</span>`;
+    } else if (aggregate > 78) {
         resultElement.innerHTML += `<br><span class="congrats">You have high chances for selection.</span>`;
-        
-    if else (aggregate >= 80) {
-            resultElement.innerHTML += `<br><span class="treat-message">Congratulation Admin ka Treet to banta hy!</span>`;
-   
-        }
     }
 }
