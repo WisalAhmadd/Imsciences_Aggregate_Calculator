@@ -25,7 +25,7 @@ function calculateAggregate() {
     const resultElement = document.getElementById('aggregate');
     resultElement.innerHTML = `Your aggregate is: <strong>${aggregate.toFixed(2)}%</strong>`;
 
-    Add message based on aggregate
+    // Add message based on aggregate
     if (aggregate >= 80) {
          resultElement.innerHTML += `<br><span class="treat-message">Congratulations & Welcome to Imsciences !</span>`;
     } else if (aggregate > 78) {
