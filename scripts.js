@@ -22,8 +22,9 @@ function calculateAggregate() {
     const aggregate = testWeighted + interviewWeighted + fscWeighted;
 
     // Display result
-    const resultElement = document.getElementById('aggregate');
-    resultElement.innerHTML = `Your aggregate is: <strong>${aggregate.toFixed(2)}%</strong>`;
+    document.getElementById('aggregate').innerText = `Your aggregate is: ${aggregate.toFixed(2)}%`;
+}
+
 
     // Add message based on aggregate
     // if (aggregate >= 80) {
@@ -31,4 +32,4 @@ function calculateAggregate() {
     // } else if (aggregate > 78) {
     //      resultElement.innerHTML += `<br><span class="congrats">You have high chances for selection!.</span>`;
     // }
-}
+// }
