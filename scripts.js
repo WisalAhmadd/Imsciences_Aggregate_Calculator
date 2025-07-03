@@ -26,9 +26,9 @@ function calculateAggregate() {
     resultElement.innerHTML = `Your aggregate is: <strong>${aggregate.toFixed(2)}%</strong>`;
 
     // Add message based on aggregate
-    if (aggregate >= 80) {
-        resultElement.innerHTML += `<br><span class="treat-message">Congratulation Admin ka Treet to banta hy !</span>`;
-    } else if (aggregate > 78) {
-        resultElement.innerHTML += `<br><span class="congrats">You have high chances for selection.</span>`;
-    }
+    // if (aggregate >= 80) {
+    //     resultElement.innerHTML += `<br><span class="treat-message">Congratulation Admin ka Treet to banta hy !</span>`;
+    // } else if (aggregate > 78) {
+    //     resultElement.innerHTML += `<br><span class="congrats">You have high chances for selection.</span>`;
+    // }
 }
