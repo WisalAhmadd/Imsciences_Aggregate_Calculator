@@ -22,14 +22,13 @@ function calculateAggregate() {
     const aggregate = testWeighted + interviewWeighted + fscWeighted;
 
     // Display result
-    document.getElementById('aggregate').innerText = `Your aggregate is: ${aggregate.toFixed(2)}%`;
-}
-
+    const resultElement = document.getElementById('aggregate');
+    resultElement.innerHTML = `Your aggregate is: <strong>${aggregate.toFixed(2)}%</strong>`;
 
     // Add message based on aggregate
-    // if (aggregate >= 80) {
-    //      resultElement.innerHTML += `<br><span class="treat-message">Congratulations & Welcome to Imsciences !</span>`;
-    // } else if (aggregate > 78) {
-    //      resultElement.innerHTML += `<br><span class="congrats">You have high chances for selection!.</span>`;
-    // }
-// }
+    if (aggregate >= 80) {
+        resultElement.innerHTML += `<br><span class="treat-message">Congratulation & Welcome to Imsciences !</span>`;
+    } else if (aggregate > 78) {
+        resultElement.innerHTML += `<br><span class="congrats">You have high chances for selection.</span>`;
+    }
+}
